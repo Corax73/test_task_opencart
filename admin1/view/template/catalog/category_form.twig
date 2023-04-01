@@ -47,10 +47,11 @@
                         <textarea name="category_description[{{ language.language_id }}][description]" placeholder="{{ entry_description }}" id="input-description-{{ language.language_id }}" data-oc-toggle="ckeditor" data-lang="{{ ckeditor }}" class="form-control">{{ category_description[language.language_id] ? category_description[language.language_id].description }}</textarea>
                       </div>
                     </div>
+                    <!--task-->
                     <div class="row mb-3">
                       <label for="input-name-new_description" class="col-sm-2 col-form-label">{{ entry_new_description }}</label>
                       <div class="col-sm-10">
-                        <input type="text" name="category_description[{{ language.language_id }}][new_description]" value="{{ category_description[language.language_id] ? category_description[language.language_id].new_description }}" placeholder="" id="input-new_description{{ language.language_id }}" class="form-control"/>
+                        <input type="text" name="category_description[{{ language.language_id }}][new_description]" value="{{ category_description[language.language_id] ? category_description[language.language_id].new_description }}" placeholder="{{ new_description }}" id="input-new_description{{ language.language_id }}" class="form-control"/>
                         <div id="error-new_description-{{ language.language_id }}" class="invalid-feedback"></div>
                       </div>
                     </div>

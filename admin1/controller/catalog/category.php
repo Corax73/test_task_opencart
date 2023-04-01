@@ -212,7 +212,6 @@ class Category extends \Opencart\System\Engine\Controller {
 		} else {
 			$data['category_description'] = [];
 		}
-		print_r($data['category_description']); //die();
 
 		if (!empty($category_info)) {
 			$data['path'] = $category_info['path'];

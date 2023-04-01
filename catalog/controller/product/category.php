@@ -112,6 +112,9 @@ class Category extends \Opencart\System\Engine\Controller {
 			}
 
 			$data['description'] = html_entity_decode($category_info['description'], ENT_QUOTES, 'UTF-8');
+			//task
+			$data['new_description'] = html_entity_decode($category_info['new_description'], ENT_QUOTES, 'UTF-8');
+
 			$data['compare'] = $this->url->link('product/compare', 'language=' . $this->config->get('config_language'));
 
 			$url = '';

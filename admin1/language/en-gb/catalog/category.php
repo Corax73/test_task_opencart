@@ -31,6 +31,8 @@ $_['entry_column']           = 'Columns';
 $_['entry_sort_order']       = 'Sort Order';
 $_['entry_status']           = 'Status';
 $_['entry_layout']           = 'Layout Override';
+//task
+$_['entry_new_description']      = 'New description';
 
 // Help
 $_['help_parent']            = '(Autocomplete)';

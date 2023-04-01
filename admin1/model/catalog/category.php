@@ -13,6 +13,7 @@ class Category extends \Opencart\System\Engine\Model {
 		foreach ($data['category_description'] as $language_id => $value) {
 			$this->db->query("INSERT INTO `" . DB_PREFIX . "category_description` SET `category_id` = '" . (int)$category_id . "', `language_id` = '" . (int)$language_id . "', `name` = '" . $this->db->escape($value['name']) . "', `description` = '" . $this->db->escape($value['description']) . "', `meta_title` = '" . $this->db->escape($value['meta_title']) . "', `meta_description` = '" . $this->db->escape($value['meta_description']) . "', `meta_keyword` = '" . $this->db->escape($value['meta_keyword']) . "'");
 			
+			//task
 			if (isset($value['new_description'])) {
 			
 				$this->db->query("UPDATE `" . DB_PREFIX . "category_description` SET `new_description` = '" . $this->db->escape($value['new_description']) . "' WHERE `category_id` = '" . (int)$category_id . "'");
@@ -90,6 +91,7 @@ class Category extends \Opencart\System\Engine\Model {
 		foreach ($data['category_description'] as $language_id => $value) {
 			$this->db->query("INSERT INTO `" . DB_PREFIX . "category_description` SET `category_id` = '" . (int)$category_id . "', `language_id` = '" . (int)$language_id . "', `name` = '" . $this->db->escape($value['name']) . "', `description` = '" . $this->db->escape($value['description']) . "', `meta_title` = '" . $this->db->escape($value['meta_title']) . "', `meta_description` = '" . $this->db->escape($value['meta_description']) . "', `meta_keyword` = '" . $this->db->escape($value['meta_keyword']) . "'");
 			
+			//task
 			if (isset($value['new_description'])) {
 			
 				$this->db->query("UPDATE `" . DB_PREFIX . "category_description` SET `new_description` = '" . $this->db->escape($value['new_description']) . "' WHERE `category_id` = '" . (int)$category_id . "'");
